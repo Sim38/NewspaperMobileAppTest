@@ -1,6 +1,5 @@
 import 'package:dio/dio.dart';
 import 'package:learning_application/core/constants/constants.dart';
-import 'package:learning_application/features/daily_news/data/models/article.dart';
 import 'package:learning_application/features/daily_news/data/models/article_response.dart';
 import 'package:retrofit/retrofit.dart';
 

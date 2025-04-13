@@ -16,7 +16,7 @@ class ArticleRepositoryImpl implements ArticleRepository {
     try {
       final httpResponse = await _newsApiService.getNewsArticles(
         apiKey: dotenv.env["NEWS_API_KEY"],
-        country: "sg",
+        country: "us",
       );
 
       if (httpResponse.response.statusCode == HttpStatus.ok) {

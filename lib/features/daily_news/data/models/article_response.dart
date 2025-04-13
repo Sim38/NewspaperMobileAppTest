@@ -12,7 +12,6 @@ class ArticleResponseModel {
   });
 
   factory ArticleResponseModel.fromJson(Map<String, dynamic> map) {
-    print("[ASD] From is called");
     return ArticleResponseModel(
       status: map["status"] ?? "",
       totalResults: map["totalResults"] ?? 0,

@@ -13,7 +13,7 @@ class ArticleRepositoryImpl implements ArticleRepository {
   ArticleRepositoryImpl(this._newsApiService);
 
   @override
-  Future<DataState<List<ArticleModel>>> getNewsArticle() async {
+  Future<DataState<List<ArticleModel>>> getNewsArticles() async {
     try {
       final httpResponse = await _newsApiService.getNewsArticles(
         apiKey: dotenv.env["NEWS_API_KEY"],
